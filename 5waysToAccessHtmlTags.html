@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>5 ways to access html tags</title>
+  </head>
+  <body>
+    <hr />
+    <h1 class="heading">Heading 1</h1>
+    <h2>this is sub heading 1</h2>
+    <p>I am paragraph tag</p>
+    <hr />
+
+    <h1 class="heading">Heading 2</h1>
+    <h2>this is sub heading 2</h2>
+    <p class="red">I am paragraph tag</p>
+    <hr />
+
+    <h1>Heading 3</h1>
+    <h2>this is sub heading 3</h2>
+    <p class="heading">I am paragraph tag</p>
+    <hr />
+    <button>click me!</button>
+
+    <script>
+      // *********************************************************  //
+      //   var myHeading = document.getElementById("myheading");
+
+      //   myHeading.style.color = "red";
+      //   myHeading.style.backgroundColor = "black";
+      //   myHeading.style.padding = "30px"
+
+      // *********************************************************  //
+
+      //   var heading1 = document.getElementsByTagName("h1");
+      //   var para = document.getElementsByTagName("p");
+
+      //   for (var i = 0; i < heading1.length; i++) {
+      //     heading1[i].style.color = "red";
+      //   }
+
+      //   for(var j = 0; j< para.length; j++) {
+      //       para[j].style.color = "blue"
+      //   }
+
+      // *********************************************************  //
+
+      //   var headings = document.getElementsByClassName("heading");
+
+      //   for (var i = 0; i < headings.length; i++) {
+      //     headings[i].style.color = "yellow";
+      //     headings[i].style.backgroundColor = "black";
+      //   }
+
+      // *********************************************************  //
+
+      var headings = document.querySelector("p.red");
+        headings.style.color = "red"
+    </script>
+  </body>
+</html>
